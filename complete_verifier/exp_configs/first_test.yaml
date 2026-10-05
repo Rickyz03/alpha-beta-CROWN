@@ -1,0 +1,20 @@
+general:
+  device: "cpu"
+model:
+  name: Customized("first_test_plugin", "get_model")
+data:
+  dataset: Customized("first_test_plugin", "get_data")
+specification:
+  epsilon: 0.1
+attack:
+  pgd_order: skip
+solver:
+  batch_size: 64
+  alpha-crown:
+    iteration: 50
+    lr_alpha: 0.1
+  beta-crown:
+    iteration: 5
+bab:
+  timeout: 60           
+  max_iterations: 10    
