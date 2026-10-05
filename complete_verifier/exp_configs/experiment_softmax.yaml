@@ -1,0 +1,22 @@
+general:
+  device: "cpu"
+  sparse_alpha: false
+  sparse_interm: false
+model:
+  name: Customized("experiment_softmax_plugin", "get_real_model")
+data:
+  dataset: Customized("experiment_softmax_plugin", "get_real_data")
+specification:
+  epsilon: 0.1
+attack:
+  pgd_order: skip
+solver:
+  batch_size: 1
+  alpha-crown:
+    iteration: 50
+    lr_alpha: 0.1
+  beta-crown:
+    iteration: 10
+bab:
+  timeout: 120
+  max_iterations: 10
