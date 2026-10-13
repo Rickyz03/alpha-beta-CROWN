@@ -12,4 +12,10 @@ python abcrown.py --config exp_configs/experiment_qk.yaml
 python abcrown.py --config exp_configs/experiment_v.yaml
 
 python abcrown.py --config exp_configs/experiment_softmax.yaml
+
+python abcrown.py --config exp_configs/real_experiment_qk.yaml
+
+python abcrown.py --config exp_configs/real_experiment_v.yaml
+
+python abcrown.py --config exp_configs/real_experiment_softmax.yaml
 ```
