@@ -1,7 +1,6 @@
 *.pt
 *.npz
 *.npy
-data/
 checkpoints/
 .coverage
 *nsys-rep
