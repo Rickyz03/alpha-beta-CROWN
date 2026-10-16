@@ -1,0 +1,22 @@
+general:
+  device: "cpu"
+  sparse_alpha: false
+  sparse_interm: false
+model:
+  name: Customized("oracle_presoftmax_plugin", "get_real_model")
+data:
+  dataset: Customized("oracle_presoftmax_plugin", "get_real_data")
+  num_outputs: 2
+specification:
+  epsilon: 0.005
+attack:
+  pgd_order: skip
+solver:
+  batch_size: 1
+  alpha-crown:
+    iteration: 50
+    lr_alpha: 0.1
+  beta-crown:
+    iteration: 10
+bab:
+  timeout: 120
